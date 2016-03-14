@@ -1,0 +1,22 @@
+- main Function (main.cpp) 
+1) Starts up the program, instantiates Settings and Application classes, and then hands control over to Application object's run method
+
+- Settings Class (Settings.h)
+1) Settings class and its subclasses handle all the tasks related to storing and retrieving game settings such as audio enabled, current player name, high score list, etc. 2) Create a Settings interface or abstract class to define the interface, provide two concrete implementation. One implementation use text file for data storage, the second implementation uses sqlite database to store the settings
+
+- Application Class (Application.h, Application.cpp)
+1) This class represents the whole application. Uses a settings objects passed to its constructor to get application settings, acquires and initializes all the static resources needed by the application, instantiates and initializes all the other classes which are required for the game to run (mainly GameObject, AI, Draw, and Input classes) .
+
+- GameObject Class (GameObject.h, Movable.h)
+1) This class and all the classes derived from this class is basically used for storing a game object's current state and all the applicable logic required for that particular game object. We could make this an abstract class.
+   - UserShip  Class (UserShip.h, UserShop.cpp)
+   - CompSub Class (CompSub.h, CompSub.cpp)
+   
+- GameAI Class (GameAI.h)
+1) As the name says AI class, possibly an abstract class
+
+- Draw Class (Draw.h, Draw.cpp)
+1) Class provides all the functionality needed to draw a game frame and then update it at regular interval. Mainly, has the logic to use GameObject objects stored state and draw it using Allegro functions. 
+
+- Input Class
+1) Clas provides functionality to read user input and then pass it on to the relevant GameObject class.
