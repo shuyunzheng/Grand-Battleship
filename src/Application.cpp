@@ -94,7 +94,7 @@ void Application::run()
   {
     ALLEGRO_EVENT event;
     al_wait_for_event(eventQueue, &event);
-    if(event.type == ALLEGRO_EVENT_TIMER || )
+    if(event.type == ALLEGRO_EVENT_TIMER)
     {
       game->update();
     } 
