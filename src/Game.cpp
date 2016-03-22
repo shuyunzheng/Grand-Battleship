@@ -7,6 +7,7 @@ Game::Game()
   
   list.insert(list.begin(), std::make_shared<UserShip>());
   list.insert(list.begin(), std::make_shared<ScoreBoard>());
+  list.insert(list.begin(), std::make_shared<Submarine>());
   
   al_flip_display();
 }

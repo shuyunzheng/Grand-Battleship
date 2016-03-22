@@ -8,6 +8,7 @@
 #include "GameObject.h"
 #include "UserShip.h"
 #include "ScoreBoard.h"
+#include "Submarine.h"
 
 
 class Game 
