@@ -3,7 +3,12 @@
 Game::Game()
 {
   loadBackground();
-  draw();
+  drawBackground();
+  
+  list.insert(list.begin(), std::make_shared<UserShip>());
+  list.insert(list.begin(), std::make_shared<ScoreBoard>());
+  
+  al_flip_display();
 }
 
 Game::~Game()
@@ -27,6 +32,8 @@ void Game::update()
 void Game::draw()
 {
   drawBackground();
+  
+  
   
   al_flip_display();
 }

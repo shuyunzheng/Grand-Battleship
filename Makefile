@@ -1,7 +1,7 @@
 GPP = g++
 CFLAGS = -std=c++11 -Wall -I /usr/include/allegro5/
 LIBDIR = /usr/lib64/
-LNFLAGS = -lallegro -lallegro_primitives -lallegro_image
+LNFLAGS = -lallegro -lallegro_primitives -lallegro_image -lallegro_audio -lallegro_font -lallegro_ttf
 
 #This finds all your cc files and places then into SRC. It's equivalent would be
 # SRC = src/main.cc src/folder1/func1.cc src/folder1/func2.cc src/folder2/func3.cc
